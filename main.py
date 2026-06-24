@@ -50,21 +50,21 @@ def menu_arrays_y_tipos():
     """Sección 1: arrays y tipos de datos."""
     print("\n--- Arrays y tipos de datos ---")
 
-    # TODO: descomenta cuando hayas implementado describir_array
-    # print("\n  VALORES_DECLARADOS:")
-    # describir_array(VALORES_DECLARADOS)
-    # print("\n  DIAS_MORA:")
-    # describir_array(DIAS_MORA)
+    # descomenta cuando hayas implementado describir_array
+    print("\n  VALORES_DECLARADOS:")
+    describir_array(VALORES_DECLARADOS)
+    print("\n  DIAS_MORA:")
+    describir_array(DIAS_MORA)
 
-    # TODO: descomenta cuando hayas implementado crear_array_declaraciones
-    # lista = [1_200_000, 750_000, 3_100_000]
-    # arr = crear_array_declaraciones(lista)
-    # print(f"\n  Array creado desde lista: {arr}")
-    # print(f"  Tipo: {arr.dtype}")
+    # descomenta cuando hayas implementado crear_array_declaraciones
+    lista = [1_200_000, 750_000, 3_100_000]
+    arr = crear_array_declaraciones(lista)
+    print(f"\n  Array creado desde lista: {arr}")
+    print(f"  Tipo: {arr.dtype}")
 
-    # TODO: descomenta cuando hayas implementado comparar_lista_vs_array
-    # valores_lista = [1_500_000, 850_000, 2_300_000, 950_000]
-    # comparar_lista_vs_array(valores_lista)
+    # descomenta cuando hayas implementado comparar_lista_vs_array
+    valores_lista = [1_500_000, 850_000, 2_300_000, 950_000]
+    comparar_lista_vs_array(valores_lista)
 
     # TODO: descomenta cuando hayas implementado filtrar_valores_en_rango
     # valores_lista = [1_500_000, 850_000, 2_300_000, 950_000, 0, 3_200_000]
@@ -255,5 +255,32 @@ def main():
             print(f"\n  Opcion '{opcion}' no reconocida.")
 
 
+#    Ciclos indefinidos se utiliza el ciclo while.
+#  El ciclo for, está construido para operar repetición en casos definidos o cuando de antemano
+# conozco la cantidad de elementos que voy a recorrer.
+ 
+#El ciclo for es útil para estructuras recorribles.
+#    1. Un rango de números (range): tiene 3 argumentos, inicio, fin y pasos
+#    2. Una estructura de datos (lista, array, diccionario, tupla.....)
+#    3. Una palabra, frase o agrupamiento de letras.
+   
+
+def ejercicio_Acumular():
+    total = 0
+    numeros = [3,7,9,15,20]
+
+    for n in numeros:
+        total += n
+        print (f"suma total: {total}")
+
+def ejercicio_Sumar():
+    valores = [4,8,16,20,30]
+    suma = sum(valores)
+    print ("la suma total es:",suma)
+
+
+
+
 if __name__ == "__main__":
-    main()
+   main()
+    
